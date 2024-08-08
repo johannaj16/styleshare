@@ -21,7 +21,11 @@ const AuthStack = () => {
       <Stack.Navigator
       initialRouteName={routeName}
       >
-        
+        <Stack.Screen 
+        name="Home" 
+        component={HomeScreen} 
+        options={{header: () => null}}
+        />
         <Stack.Screen 
         name="Onboarding" 
         component={OnboardingScreen} 
@@ -52,11 +56,7 @@ const AuthStack = () => {
         })
       }
         />
-        <Stack.Screen 
-        name="Home" 
-        component={HomeScreen} 
-        options={{header: () => null}}
-        />
+        
       </Stack.Navigator>
   );
 }
